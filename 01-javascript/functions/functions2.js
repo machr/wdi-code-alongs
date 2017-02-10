@@ -17,6 +17,7 @@ var calculateAge = function(birthYear, thisYear){
 //  2. Write a function `lengths` that accepts a single parameter as an argument, namely
 // an array of strings. The function should return an array of numbers where each
 // number is the length of the corresponding string.
+var sampleArray = ['Apple', 'Pear', 'Pineapple', 'Dragon'];
 
 var lengths = function(stringsArray){
   var getLength = [];
@@ -35,6 +36,10 @@ var lengths = function(stringsArray){
 
 var transmogrifier = function(a, b, c){
   return Math.pow( (a * b), c );
+
+// Alternatively (more wordy)
+// var product = a * b;
+// return Math.pow(product, c)
 };
 
 // 4. Write a function `wordReverse` that accepts a single argument, a string. The
@@ -43,6 +48,8 @@ var transmogrifier = function(a, b, c){
 
 // split reverse
 var wordReverse = function( inputString ) {
-  return inputString.split('').reverse().join('');
+  return 	inputString.split(' ')
+  			.reverse()
+  			.join(' ');
 
 };
