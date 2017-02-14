@@ -1,0 +1,18 @@
+div {
+  box-sizing: content-box;
+  padding: 20px 5px;
+  border: 3px dashed green;
+  width: 60%;
+  margin: 50px auto;
+  height: 5vh;
+  background-color: white;
+  transition: 0.5s all ease;
+  text-align: center;
+}
+
+div:hover{
+  height: 15vh;
+  background-color: linen;
+  font-size: 2em;
+  transition: 0.5s all ease;
+}

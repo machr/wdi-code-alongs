@@ -1,0 +1,7 @@
+#zombie {
+  position: absolute;
+  height: 150px;
+  width: auto;
+  top: 200px;
+  transition: 0.5 all ease;
+}

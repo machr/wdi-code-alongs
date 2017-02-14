@@ -48,8 +48,6 @@ var transmogrifier = function(a, b, c){
 
 // split reverse
 var wordReverse = function( inputString ) {
-  return 	inputString.split(' ')
-  			.reverse()
-  			.join(' ');
+  return inputString.split(' ').reverse().join(' ');
 
 };
