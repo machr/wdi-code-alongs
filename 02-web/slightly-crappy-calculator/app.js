@@ -49,6 +49,5 @@ clearBtn.addEventListener('click', function(){
 
   var theme4 = document.querySelector('.theme-four');
   theme4.addEventListener('click', function(event){
-    // debugger
     changeBackground(event);
   });
