@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function doSomething(){
+      // console.log(this);
+    }
+
+    doSomething();
+
+    var person = {
+      name: 'Bob',
+      sayHello: function(){
+        console.log('Hello');
+        console.log("Person's name is " + this.name);
+      }
+    }
+
+  function each(arr, func){
+    for (var i = 0; i < arr.length; i++) {
+      func(arr[i]);
+    }
+  }
+
+  list = [ 'a', 'b', 'c', 'd'];
+
+  each(list, function(element){
+    console.log(element);
+  })
+
+  // 1. Based on the call site - (how the function is being called)
+  // Default Binding
+  func();
+
+  // 2. Implied binding
+  obj.func();
+
+  // 3. Explicit binding
+  func.call(obj)
+  foo.func.call(obj);
+  doSomething.apply(obj);
+
+  // 4. Hard binding - Permantly set the context of a function
+  var newFunc = func.bind(obj); // => returns another function for you to call
+
+  
+
+  </script>
+</body>
+</html>
